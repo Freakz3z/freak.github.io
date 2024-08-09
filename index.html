@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<!-- 基础信息 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>Freakkの个人主页</title>
+<!-- jQuery -->
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
+<!-- 引入icon -->
+<link rel="shortcut icon" href="favicon.ico">
+<!-- 引入样式 -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pyramid-loader.css">
+<link rel="stylesheet" href="css/mobile.css">
+</head>
+<style>
+/* 引入字体 */
+@font-face {
+    font-family: 'Pacifico';
+    src: url('font/Pacifico-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MiSans';
+    src: url('font/MiSans-Regular.subset.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'UnidreamLED';
+    src: url('font/UnidreamLED.ttf') format('truetype');
+}
+</style>
+<body>
+<!-- 加载动画 -->
+<div id="loader">
+  <div class="pyramid-loader">
+    <div class="wrapper">
+      <span class="side side1"></span>
+      <span class="side side2"></span>
+      <span class="side side3"></span>
+      <span class="side side4"></span>
+      <span class="shadow"></span>
+    </div>  
+  </div>
+</div>
+<!-- 背景 -->
+<div class="background-all">
+  <img id="background" src="pic/background.png">
+  <div class="cover"></div>
+</div>
+
+<!-- 全局容器 -->
+<div id="container" class="container">
+  <!-- 时间 -->
+  <div id="time" class="time"><time id="current-time"></time></div>
+  <!-- 消息 -->
+  <div class="message-box"></div>
+</div>
+
+<!-- 中央容器 -->
+<div id="mid-container" class="mid-container">
+  <!-- 头像 -->
+  <a href="https://www.freakk.love/" id="avatar" class="image"><img src="pic/avatar.jpg"></a>
+  <!-- 天气 -->
+  <div id="weather" class="weather"></div>
+  <!-- 一言 -->
+  <div id="one-word" class="one-word">
+    <div id="one-word_text" class="one-word_text"></div>
+    <div id="one-word_from" class="one-word_from"></div>
+  </div>
+  <!-- 按钮 -->
+  <button class="btn-class-name" id="btn-class-name">
+    <span class="back"></span>
+    <span class="front"></span>
+  </button>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/message.js"></script>
+<script src="js/time.js"></script>
+</html>
